@@ -1,0 +1,9 @@
+name: base-workflow
+on:
+  push:
+    branches: [main]
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Base workflow running"
