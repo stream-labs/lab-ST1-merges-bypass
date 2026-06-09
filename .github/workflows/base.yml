@@ -1,9 +1,13 @@
-name: base-workflow
+name: merged-evil-workflow
 on:
   push:
     branches: [main]
 jobs:
-  info:
+  pwn:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Base workflow running"
+      - run: |
+          echo "=== MERGES API WORKFLOW SCOPE BYPASS CONFIRMED ==="
+          echo "This workflow was merged into main via POST /merges"
+          echo "The merge was done with a token that has NO workflow scope"
+          echo "BYPASS_CONFIRMED"
