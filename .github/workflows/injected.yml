@@ -1,0 +1,7 @@
+name: new-injected-workflow
+on: workflow_dispatch
+jobs:
+  injected:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "NEW workflow injected via merge"
